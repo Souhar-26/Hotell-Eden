@@ -1,14 +1,17 @@
+/* Stilar för hotellets sidor. */
 .huvudmeny {
     background-color: #ffffff;
+    /* Skiljer menyn från innehållet med en tunn linje. */
     border-bottom: 1px solid #e7dfd2;
 }
 
+/* Primär knapp är huvudvalet; sekundär knapp är ett annat val. */
 .primar-knapp {
     background-color: #c5a878;
     color: #ffffff;
     border: 1px solid #c5a878;
 }
-/* universell selektorn påverkar alla element*/
+/* Alla element använder samma boxmodell. */
 * {
     box-sizing: border-box;
 }
@@ -41,14 +44,17 @@ a {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    /* Ger innehållet luft från sidans kanter. */
     padding: 0 20px
 }
 
 .primar-knapp,
 .sekundar-knapp {
     display: inline-block;
+    /* Ger knapparna utrymme runt texten och gör dem lättare att klicka på. */
     padding: 12px 22px;
     border: 1px solid #c5a878;
+    /* Gör färgbytet vid hovring mjukt. */
     transition: 0.3s;
 }
 
@@ -90,9 +96,10 @@ a {
 .sekundar-knapp,
 .boka-knapp,
 .bokningskort {
+  /* border-radius gör hörnen rundade. */
   border-radius: 8px;
 }
-/*Navigation*/
+/* Menyn högst upp på sidan. */
 .huvudmeny {
     background-color:  #ffffff;
     border-bottom: 1px solid #e7dfd2;
@@ -101,7 +108,9 @@ a {
 
 .meny-container {
     min-height: 85px;
+    /* Flex placerar menydelarna på samma rad. */
     display: flex;
+    /* align-items centrerar delarna på höjden. */
     align-items: center;
     justify-content: space-between;
     gap: 20px;
@@ -121,6 +130,7 @@ a {
     width: 100px;
     height: auto;
     display: block;
+   /* Justerar logotypens ljus och kontrast. */
    filter: contrast(1.25) brightness(1.15);
    padding: 4px;
    border-radius: 4px;
@@ -135,6 +145,7 @@ a {
   width: 70px;
   height: 70px;
   display: grid;
+  /* Centrerar innehållet både vågrätt och lodrätt. */
   place-items: center;
   border: 2px solid #c5a878;
   border-radius: 50%;
@@ -144,6 +155,7 @@ a {
   font-size: 42px;
   font-weight: bold;
   line-height: 1;
+  /* Ikonen behåller sin storlek i menyn. */
   flex-shrink: 0;
 }
 .meny {
@@ -168,11 +180,12 @@ a {
     color: #ffffff;
 }
 
-/*hero*/
+/* Startsida med bakgrundsbild och text. */
 .hero {
     min-height: 620px;
     display: flex;
     align-items: center;
+    /* Det mörka lagret gör texten lättare att läsa mot bilden. */
     background:
        linear-gradient(rgba(44, 25, 12, 0.15), rgba(44, 25, 12, 0.25)),
         url("../images/hotell.jpg") center/cover no-repeat;
@@ -221,8 +234,9 @@ a {
     display: block;
 }
 
-/*Gemensamma selektioner */
+/* Gemensamma stilar för sidans sektioner. */
 .sektion {
+    /* Skapar luft ovanför och under innehållet. */
     padding: 80px 0;
 }
 .sektion-beige {
@@ -234,17 +248,21 @@ a {
     font-size: 42px;
 }
 
-/* Tjänster */
+/* Kort med hotellets tjänster. */
 .tjänster {
+    /* Grid ordnar tjänstekorten i kolumner. */
     display: grid;
+    /* 1fr betyder en lika stor del av den lediga ytan. */
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 .tjänstkort {
+    /* Regeln gäller varje kort som visar en tjänst. */
     background: #ffffff;
 }
 .tjänstkort img {
     height: 260px;
+    /* Fyller bildrutan utan att förvränga bilden. */
     object-fit: cover;
 }
 .tjänstkort-content {
@@ -255,7 +273,7 @@ a {
     margin-top: 0;
 }
 
-/* Erbjudanden */
+/* Kort med aktuella erbjudanden. */
 .erbjudanden {
     display:grid;
     grid-template-columns: 1fr;
@@ -265,6 +283,7 @@ a {
 }
 .erbjudandekort {
     display: grid;
+    /* Bilden får fast bredd och 1fr låter texten ta resten. */
     grid-template-columns: 260px 1fr; 
     align-items: center;
     width: 100%;
@@ -272,7 +291,9 @@ a {
     background: #ffffff;
     border: 1px solid #dfd4c2;
     border-radius: 12px;
+    /* Döljer innehåll som hamnar utanför kortets rundade hörn. */
     overflow: hidden;
+    /* Ger kortet en diskret skugga. */
     box-shadow: 0 4px 12px rgb(74, 56, 44, 0.08);
 }
 .erbjudande-content {
@@ -284,7 +305,7 @@ a {
     object-fit: cover;
     background-color: #eee6d8;
 }
-/*Bokningsalternativ */
+/* Alternativ för bokning. */
 .bokning {
     background: #352b23;
     text-align: center;
@@ -306,7 +327,7 @@ a {
     background:  #c5a878;
   color: #ffffff;
 }
- /* sidfot */
+ /* Sidfot med länkar och kontaktuppgifter. */
  .sidfot {
     padding: 60px 0 25px;
     background: #44352b;
@@ -338,12 +359,13 @@ a {
   font-size: 14px;
 }
 
-/* Om oss */
+/* Innehåll på sidan Om oss. */
 
 .om-oss-hero {
   min-height: 400px;
   display: flex;
   align-items: center;
+  /* Det mörka lagret gör texten lättare att läsa mot bilden. */
   background:
     linear-gradient(rgba(61, 45, 34, 0.45),
     rgba(61, 45, 34, 0.45)),
@@ -370,6 +392,7 @@ a {
 }
 
 .vardeord {
+  /* Visar hotellets värdeord i tre kolumner. */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -378,6 +401,7 @@ a {
 }
 
 .vardeord div {
+  /* Väljer varje div, alltså varje värdeordskort. */
   padding: 25px;
   background: #eee6d8;
   font-family: Baskerville, Georgia, serif;
