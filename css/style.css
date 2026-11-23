@@ -86,6 +86,12 @@ a {
     color: #ffffff;
     border-color: #c5a878;
 }
+.primar-knapp,
+.sekundar-knapp,
+.boka-knapp,
+.bokningskort {
+  border-radius: 8px;
+}
 /*Navigation*/
 .huvudmeny {
     background-color:  #ffffff;
