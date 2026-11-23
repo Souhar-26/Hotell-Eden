@@ -256,10 +256,6 @@ a {
     background: #ffffff;
     border: 1px solid #dfd4c2;
 }
-.erbjudandekort img.bild-hel {
-  height: 130px;
-  object-fit: contain;
-}
 .erbjudande-content {
     padding: 20px;
 }
