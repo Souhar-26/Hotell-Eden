@@ -1,0 +1,346 @@
+.huvudmeny {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e7dfd2;
+}
+
+.primar-knapp {
+    background-color: #c5a878;
+    color: #ffffff;
+    border: 1px solid #c5a878;
+}
+/* universell selektorn påverkar alla element*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #cec5ac;
+  color: #4a382c;
+  font-family: "Nunito Sans", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Baskerville, Georgia, serif;
+  line-height: 1.2;
+}
+ 
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+ color: inherit;
+ text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px
+}
+
+.primar-knapp,
+.sekundar-knapp {
+    display: inline-block;
+    padding: 12px 22px;
+    border: 1px solid #c5a878;
+    transition: 0.3s;
+}
+
+.primar-knapp {
+    background:  #c5a878;
+    color: #ffffff;
+}
+
+.primar-knapp:hover {
+    background: #4a382c;
+    border-color: #4a382c;
+}
+
+.sekundar-knapp {
+    background: #c5a878;
+    color: #ffffff;
+    border: 1px solid #c5a878;
+}
+.sekundar-knapp:hover {
+    color: #ffffff;
+    background: #4a382c;
+    border-color: #4a382c;
+}
+
+.hero-knappar .primar-knapp,
+.hero-knappar .sekundar-knapp {
+    background: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.hero-knappar .primar-knapp:hover,
+.hero-knappar .sekundar-knapp:hover {
+    background: #c5a878;
+    color: #ffffff;
+    border-color: #c5a878;
+}
+/*Navigation*/
+.huvudmeny {
+    background-color:  #ffffff;
+    border-bottom: 1px solid #e7dfd2;
+    padding: 12px 0;
+}
+
+.meny-container {
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logotyp {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Baskerville, Georgia, serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #1f1711;
+    text-decoration: none;
+}
+.logotyp img {
+    width: 100px;
+    height: auto;
+    display: block;
+   filter: contrast(1.25) brightness(1.15);
+   padding: 4px;
+   border-radius: 4px;
+}
+.logotyp {
+    font-family: Baskerville, Georgia, serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #352b23;
+}
+.logotyp-ikon {
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #c5a878;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #4a382c;
+  font-family: Baskerville, Georgia, serif;
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.meny {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.meny a {
+    font-size: 15px;
+}
+.meny a:hover {
+    color: #c5a878;
+}
+
+.boka-knapp {
+    padding: 10px 16px;
+    background: #c5a878;
+    color: #ffffff;
+}
+
+/*hero*/
+.hero {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(rgba(44, 25, 12, 0.38), rgba(61, 45, 34, 0.60)),
+        url("../images/hotell.jpg") center/cover no-repeat;
+    color: #fcfbf7;
+}
+.hero-content {
+    max-width: 650px;
+    padding: 60px 20px;
+}
+.hero-knappar {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.hero h1 {
+    font-size: 58px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+.hero p {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/*Gemensamma selektioner */
+.sektion {
+    padding: 80px 0;
+}
+.sektion-beige {
+    background-color: #eee6d8;
+}
+.sektion-rubrik {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 42px;
+}
+
+/* Tjänster */
+.tjänster {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.tjänstkort {
+    background: #ffffff;
+}
+.tjänstkort img {
+    height: 260px;
+    object-fit: cover;
+}
+.tjänstkort-content {
+    padding: 25px;
+}
+.tjänstkort h3 {
+    font-size: 28px;
+    margin-top: 0;
+}
+
+/* Erbjudanden */
+.erbjudanden {
+    display:grid;
+    grid-template-columns: repeat(4. 1fr);
+    gap: 20px;
+}
+.erbjudandekort {
+    background: #ffffff;
+    border: 1px solid #dfd4c2;
+}
+.erbjudande-content {
+    padding: 20px;
+}
+/*Bokningsalternativ */
+.bokning {
+    background: #352b23;
+    text-align: center;
+}
+.bokningsalternativ {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.bokning .sektion-rubrik {
+  color: #c5a878;
+}
+.bokningskort {
+    padding: 25px 15px;
+    border: 1px solid;
+     color: #d8c4a4;
+     transition: 0.3s;
+}
+.bokningskort:hover {
+    background:  #c5a878;
+  color: #ffffff;
+}
+ /* sidfot */
+ .sidfot {
+    padding: 60px 0 25px;
+    background: #44352b;
+    color: #ffffff;
+ }
+ .sidfot-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+ }
+ .sidfot  h3 {
+    color:  #c5a878;
+    margin-top: 0;
+ }
+ .sidfot ul {
+    padding: 0;
+    list-style: none;
+ }
+ .sidfot li {
+    margin-bottom: 8px;
+ }
+ .sidfot a:hover {
+    color:  #c5a878;
+ }.copyright {
+  border-top: 1px solid #67584a;
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Om oss */
+
+.om-oss-hero {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(rgba(61, 45, 34, 0.45),
+    rgba(61, 45, 34, 0.45)),
+    url("../images/hero.jpg") center/cover no-repeat;
+  color: #ffffff;
+  text-align: center;
+}
+
+.om-oss-hero h1 {
+  width: 100%;
+  font-size: 52px;
+}
+
+.om-oss-innehall {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.om-oss-bild {
+  height: 450px;
+  object-fit: cover;
+}
+
+.vardeord {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.vardeord div {
+  padding: 25px;
+  background: #eee6d8;
+  font-family: Baskerville, Georgia, serif;
+  font-size: 22px;
+}
+
