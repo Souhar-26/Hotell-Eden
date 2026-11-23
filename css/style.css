@@ -168,7 +168,7 @@ a {
     display: flex;
     align-items: center;
     background:
-        linear-gradient(rgba(171, 167, 212, 0.38), rgba(205, 190, 180, 0.6)),
+       linear-gradient(rgba(44, 25, 12, 0.15), rgba(44, 25, 12, 0.25)),
         url("../images/hotell.jpg") center/cover no-repeat;
     color: #fcfbf7;
 }
