@@ -408,3 +408,178 @@ a {
   font-size: 22px;
 }
 
+/* ==========================================
+   PERSON 4 – KONFERENS, ERBJUDANDEN, KONTAKT
+   ========================================== */
+
+/* Gemensam layout för mina tre sidor */
+.person4-sida {
+    width: min(1100px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 48px 0 80px;
+}
+
+/* Sektioner med luft och mjuka kort */
+.person4-sida > section {
+    background-color: #eee6d8;
+    border: 1px solid #dfd4c2;
+    border-radius: 12px;
+    padding: 36px;
+    margin-bottom: 28px;
+}
+
+/* Introduktionen får ljusare bakgrund */
+.person4-sida > section:first-child {
+    background-color: #f8f4ed;
+}
+
+/* Rubriker */
+.person4-sida h1 {
+    font-size: clamp(32px, 4vw, 50px);
+    color: #4a382c;
+    margin-top: 0;
+}
+
+.person4-sida h2 {
+    font-size: clamp(26px, 3vw, 34px);
+    color: #4a382c;
+    margin-top: 0;
+}
+
+.person4-sida h3 {
+    font-size: 24px;
+    color: #4a382c;
+}
+
+/* Brödtext */
+.person4-sida p,
+.person4-sida li {
+    line-height: 1.8;
+}
+
+.person4-sida p {
+    margin-bottom: 16px;
+}
+
+/* Formulär */
+.person4-sida form {
+    max-width: 800px;
+    margin: 24px auto;
+}
+
+.person4-sida fieldset {
+    border: 1px solid #d5c5ae;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 24px;
+    margin-bottom: 24px;
+    min-width: 0;
+}
+
+.person4-sida legend {
+    font-family: Baskerville, Georgia, serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a382c;
+    padding: 0 10px;
+}
+
+/* Etiketter */
+.person4-sida label {
+    display: block;
+    font-weight: 600;
+    margin: 16px 0 6px;
+}
+
+/* Inmatningsfält */
+.person4-sida input:not([type="checkbox"]):not([type="radio"]),
+.person4-sida select,
+.person4-sida textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #b9aa95;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #4a382c;
+    font: inherit;
+}
+
+/* Textfält för längre meddelanden */
+.person4-sida textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+/* Tydlig markering vid tangentbordsnavigering */
+.person4-sida input:focus-visible,
+.person4-sida select:focus-visible,
+.person4-sida textarea:focus-visible,
+.person4-sida button:focus-visible,
+.person4-sida a:focus-visible {
+    outline: 3px solid #82633e;
+    outline-offset: 3px;
+}
+
+/* Formulärknappar */
+.person4-sida button {
+    padding: 12px 22px;
+    margin: 8px 8px 8px 0;
+    border: 1px solid #c5a878;
+    border-radius: 8px;
+    background-color: #c5a878;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.person4-sida button:hover:not(:disabled) {
+    background-color: #4a382c;
+    border-color: #4a382c;
+}
+
+/* Rensa-knapp */
+.person4-sida button[type="reset"] {
+    background-color: transparent;
+    color: #4a382c;
+}
+
+/* Inaktiva demoknappar */
+.person4-sida button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Interna länkar */
+.person4-sida a {
+    color: #6b4829;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.person4-sida a:hover {
+    color: #a07843;
+}
+
+/* Anpassning för mindre skärmar */
+@media (max-width: 600px) {
+    .person4-sida {
+        width: calc(100% - 24px);
+        padding: 24px 0 48px;
+    }
+
+    .person4-sida > section {
+        padding: 20px;
+    }
+
+    .person4-sida fieldset {
+        padding: 16px;
+    }
+
+    .person4-sida button {
+        width: 100%;
+        margin-right: 0;
+    }
+}
