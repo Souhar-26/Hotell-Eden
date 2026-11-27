@@ -47,34 +47,6 @@ a {
     /* Ger innehållet luft från sidans kanter. */
     padding: 0 20px
 }
-div.container{
-  margin-top: 100px;
-  margin-right: 200px;
-  margin-bottom:150px;
-  margin-left: 150px;
-}
-
-div.container{
-  margin-top: 100px;
-  margin-right: 200px;
-  margin-bottom:150px;
-  margin-left: 150px;
-}
-
-/* <div class="container">
-This div element has a top margin of 100px, a right margin of 200px, 
-a bottom margin of 150px, and a left margin of 150px.
-</div> */ 
-div.container{
-  margin: 100px;
-}
-div.container{
-  margin: 100px 200px 150px 150px;
-}
-div.container{
-  margin: 100px;
-}
-
 .primar-knapp,
 .sekundar-knapp {
     display: inline-block;
